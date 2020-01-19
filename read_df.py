@@ -18,12 +18,13 @@ pd.options.display.max_columns = None
 client = DataFrameClient(host='localhost', port=8086, database=target_db)
 
 def read_data(field_key, measurement_name, condition1, condition2, condition3, limit, label):
-  if is_demo:
-    shift = datetime.now() - datetime(2020, 1, 9)
-    time_shift = str(' - ' + str(shift.days) + 'd ')
-    condition2 = condition2 + time_shift
-    # print(condition2)
-    # print('time_shift = ', time_shift)
+  global time_shift
+  if is_demo and time_shift==' - 0d ':
+      shift = datetime.now() - datetime(2020, 1, 9)
+      time_shift = str(' - ' + str(shift.days) + 'd ')
+  condition2 = condition2 + time_shift
+  # print(condition2)
+  # print('time_shift = ', time_shift)
   query_db = str('SELECT "%s" FROM "%s" WHERE %s AND %s AND %s LIMIT %d ' % (field_key, measurement_name, condition1, condition2, condition3, limit+1))
   data_db = client.query(query_db)
   data_df = pd.DataFrame(data_db[str(measurement_name)])
