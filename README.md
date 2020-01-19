@@ -1,4 +1,4 @@
-# ML-anomaly-detection
+# ML-anomaly_detection-demo
 
 This Repo is to accompany the TECDEV-2765 Cisco Live Europe session
 it includes code to follow along with the presenters
