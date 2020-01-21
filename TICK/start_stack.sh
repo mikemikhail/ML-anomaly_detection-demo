@@ -1,5 +1,8 @@
 #!/bin/bash
-
+command `vncserver`
+                        echo -e "\e[1;32m vncserverDone! \e[0m";
+command `sudo systemctl start chronograf`
+                        echo -e "\e[1;32m chornograf Done! \e[0m";
 command `sudo systemctl start telegraf`
                         echo -e "\e[1;32m Telegraf Done! \e[0m";
 command `sudo systemctl start kapacitor`
