@@ -45,7 +45,8 @@ and see in dashboard "monitored"
 
 To start Machine Learning prediction & Anomaly Detection:
 
+$ cd tecdev-2765
 
+$ rm -r model/
 
-
-
+$ python moniotr.py
