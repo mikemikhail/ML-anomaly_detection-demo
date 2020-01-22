@@ -52,3 +52,6 @@ $ cd tecdev-2765
 $ rm -r model/
 
 $ python moniotr.py
+
+In a few seconds you'll see descriptions of large dataframes of numbers. After the first large training cycle, you'll see plots.
+
