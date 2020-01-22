@@ -55,4 +55,4 @@ $ python moniotr.py
 
 In a few seconds you'll see descriptions of large dataframes of numbers. After the first large training cycle, you'll see plots.
 
-[3 plots](https://github.com/mikemikhail/ML-anomaly_detection-demo/blob/master/demo.png)
+![3 plots](https://github.com/mikemikhail/ML-anomaly_detection-demo/blob/master/demo.png)
