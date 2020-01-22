@@ -26,7 +26,7 @@ $ ssh -Y -p 2222 -i ~/.vagrant.d/insecure_private_key vagrant@127.0.0.1
 
 to start up the telemetry stack 
 
-$ sh /tecdev-2765/TICK/start_stack.sh
+$ sh tecdev-2765/TICK/start_stack.sh
 
 $ start influxdb &
 
@@ -37,6 +37,15 @@ From your laptop you can connect to grafana and see the data visualizations
 
 http://localhost:3000
 creds are admin/admin
+
+To visualize data from Dec 24, 2019 to Jan 16, 2020:
+
+in grafana go to setting and change InfluxDB database to mdt_db-200116
+and see in dashboard "monitored"
+
+To start Machine Learning prediction & Anomaly Detection:
+
+
 
 
 
