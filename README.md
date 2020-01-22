@@ -24,6 +24,8 @@ or to connect and see the generated ML graphs via x-server
 
 $ ssh -Y -p 2222 -i ~/.vagrant.d/insecure_private_key vagrant@127.0.0.1
 
+or go to virtual machine window in Virtualbox, login vagrant/vagrant, and open up a terminal
+
 to start up the telemetry stack 
 
 $ sh tecdev-2765/TICK/start_stack.sh
