@@ -7,20 +7,18 @@ Requrements to run this locally are Virtualbox (we used 6.0), Vagrant, X-Server 
 
 First clone the repo with 
 
-git clone https://github.com/mikemikhail/ML-anomaly-detection-demo.git
+git clone https://github.com/mikemikhail/ML-anomaly-detection-demo
 
 You can save time by running this command ahead of time to download the vagrant image beforehand
-to start up the Collection Stack, simply type "vagrant up"
+to start up the Collection Stack, simply switch to clone directory type "vagrant up"
+
+$ cd ~/ML-anomaly_detection-demo/
 
 $ vagrant up
 
 Once you have the VM up and returns to your prompt you ready to move on 
 
-to connect to the VM, type
-
-$ vagrant ssh TICK
-
-or to connect and see the generated ML graphs via x-server
+to connect and see the generated ML graphs via x-server
 
 $ ssh -Y -p 2222 -i ~/.vagrant.d/insecure_private_key vagrant@127.0.0.1
 
@@ -35,6 +33,8 @@ $ start influxdb &
 Once that is up you can run the ML script with the following command
 python tecdev-2765/monitor.py
 
+--------
+Optional:
 From your laptop you can connect to grafana and see the data visualizations
 
 http://localhost:3000
@@ -44,6 +44,7 @@ To visualize data from Dec 24, 2019 to Jan 16, 2020:
 
 in grafana go to setting and change InfluxDB database to mdt_db-200116
 and see in dashboard "monitored"
+--------
 
 To start Machine Learning prediction & Anomaly Detection:
 
@@ -56,3 +57,5 @@ $ python moniotr.py
 In a few seconds you'll see descriptions of large dataframes of numbers. After the first large training cycle, you'll see plots.
 
 ![3 plots](https://github.com/mikemikhail/ML-anomaly_detection-demo/blob/master/demo.png)
+
+A model is born!
