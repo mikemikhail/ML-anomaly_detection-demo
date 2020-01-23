@@ -44,6 +44,7 @@ To visualize data from Dec 24, 2019 to Jan 16, 2020:
 
 in grafana go to setting and change InfluxDB database to mdt_db-200116
 and see in dashboard "monitored"
+![Grafana monitored dashboard](https://github.com/mikemikhail/ML-anomaly_detection-demo/blob/master/demo-dashboard.png)
 --------
 
 To start Machine Learning prediction & Anomaly Detection:
