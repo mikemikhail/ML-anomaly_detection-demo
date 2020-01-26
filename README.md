@@ -7,7 +7,7 @@ Requrements to run this locally are Virtualbox (we used 6.0), Vagrant, X-Server 
 
 First clone the repo with 
 
-git clone https://github.com/mikemikhail/ML-anomaly_detection-demo 
+$ git clone https://github.com/mikemikhail/ML-anomaly_detection-demo 
 
 You can save time by running this command ahead of time to download the vagrant image beforehand
 to start up the Collection Stack, simply switch to clone directory type "vagrant up"
