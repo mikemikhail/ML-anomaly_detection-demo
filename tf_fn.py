@@ -3,7 +3,7 @@
 '''
 mamikhai@cisco.com
 20200111
-Tensorflow fnd plot unctions for monitor.py
+Tensorflow and plot functions for monitor.py
 '''
 
 import math
